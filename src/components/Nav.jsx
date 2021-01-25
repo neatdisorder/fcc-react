@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class Nav extends React.Component {
     constructor(props) {
@@ -10,29 +10,29 @@ class Nav extends React.Component {
         return (
             <ul>
                 <li>
-                    <Link to="/random-quote-machine">
+                    <NavLink to="/random-quote-machine" activeClassName="nav-active">
                         Random Quote Machine
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to='/markdown-previewer'>
+                    <NavLink to='/markdown-previewer' activeClassName="nav-active">
                         Markdown Previewer
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to='/drum-machine'>
+                    <NavLink to='/drum-machine' activeClassName="nav-active">
                         Drum Machine
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to='/javascript-calculator'>
+                    <NavLink to='/javascript-calculator' activeClassName="nav-active">
                         Javascript Calculator
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to='/clock'>
+                    <NavLink to='/clock' activeClassName="nav-active">
                         25 + 5 Clock
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
         );

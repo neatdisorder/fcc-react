@@ -1,22 +1,28 @@
 import React from 'react';
+import Calculator from './Calculator';
+import './javascriptcalculator-style.css';
 
 class JavascriptCalculator extends React.Component {
+  
     constructor(props) {
-        super(props);
+      super(props);
     };
-
+    
     render() {
-        return (
-            <main>
-                <h1>
-                    Javascript Calculator
-                </h1>
-                <p>
-                    This is a Javascript Calculator.
-                </p>
-            </main>
-        );
+      return (
+        <div>
+         <header>
+           <h1>Calculator</h1>
+         </header>
+         <Calculator />
+         <footer>
+           <p>
+             This is a footer
+           </p>
+         </footer>
+        </div>
+      );
     };
-};
+  };
 
 export default JavascriptCalculator;

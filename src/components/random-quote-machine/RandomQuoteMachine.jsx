@@ -1,22 +1,50 @@
 import React from 'react';
+import Quote from './Quote';
+import QuoteTitle from './QuoteTitle';
+import './quote-style.css';
 
 class RandomQuoteMachine extends React.Component {
+  
     constructor(props) {
-        super(props);
+      super(props);
+      this.state = {
+        quote: Math.floor(Math.random() * 5)
+      };
+      this.changeQuote = this.changeQuote.bind(this);
     };
+    
+    changeQuote() {
 
+        let numberQuote = Math.floor(Math.random() * 5);
+
+        if (numberQuote == this.state.quote) {
+            if (numberQuote == 4) {
+                this.setState({
+                    quote: numberQuote - 1
+                });
+            } else {
+                this.setState({
+                    quote: numberQuote + 1
+                });
+            }
+        } else {
+            this.setState({
+                quote: numberQuote
+            })
+        }
+    }
+    
     render() {
-        return (
-            <main>
-                <h1>
-                    Random Quote Machine
-                </h1>
-                <p>
-                    This is a Random Quote Machine.
-                </p>
-            </main>
-        );
+      return (
+          <div id='quote-app'>
+            <QuoteTitle />
+            <div id="quote-container">
+              <Quote quote={this.state.quote}/>
+              <button onClick={this.changeQuote} id="new-quote">Show me another quote</button>
+            </div>
+          </div>
+      );
     };
-};
+  };
 
 export default RandomQuoteMachine;

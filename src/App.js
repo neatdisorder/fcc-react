@@ -7,7 +7,7 @@ import RandomQuoteMachine from './components/random-quote-machine/RandomQuoteMac
 import MarkdownPreviewer from './components/markdown-previewer/MarkdownPreviewer';
 import DrumMachine from './components/drum-machine/DrumMachine';
 import JavascriptCalculator from './components/javascript-calculator/JavascriptCalculator';
-import Clock from './components/clock/Clock';
+import ClockApp from './components/clock/ClockApp';
 import './App.css';
 
 class App extends React.Component {
@@ -26,7 +26,7 @@ class App extends React.Component {
             <Route path='/markdown-previewer' component={MarkdownPreviewer} />
             <Route path='/drum-machine' component={DrumMachine} />
             <Route path='/javascript-calculator' component={JavascriptCalculator} />
-            <Route path='/clock' component={Clock} />
+            <Route path='/clock' component={ClockApp} />
           </Switch>
           <Footer />
         </div>

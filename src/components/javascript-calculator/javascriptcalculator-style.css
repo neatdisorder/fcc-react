@@ -1,0 +1,33 @@
+#calculator {
+    border: 1px solid black;
+    padding: 20px;
+  }
+  
+  #display {
+    border: 1px solid black;
+    font-size: 24px;
+    height: 30px;
+    
+    margin: 10px 0;
+  }
+  
+  #result {
+    border: 1px solid black;
+    font-size: 24px;
+    height: 30px;
+    margin: 10px 0;
+  }
+  
+  #keyboard-numbers, #keyboard-operators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .key {
+    margin: 5px;
+    padding: 5px 20px;
+    border: 1px solid black;
+  }
