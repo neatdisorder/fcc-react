@@ -1,6 +1,7 @@
 import React from 'react';
 import Drum from './Drum';
 import './drummachine-style.css';
+import DrumTitle from './DrumTitle';
 
 class DrumMachine extends React.Component {
   
@@ -11,11 +12,7 @@ class DrumMachine extends React.Component {
   render() {
     return (
       <div>
-        <header>
-          <h1>
-            This is a Drum Machine
-          </h1>
-        </header>
+        <DrumTitle />
         <Drum />
       </div>
     );

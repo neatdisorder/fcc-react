@@ -5,6 +5,10 @@ body {
     text-align: center;
 }
 
+#root {
+    width: 80%;
+}
+
 header {
     display: flex;
     align-items: center;

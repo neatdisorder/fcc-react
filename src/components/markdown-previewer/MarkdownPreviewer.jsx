@@ -1,6 +1,8 @@
 import React from 'react';
 import marked from 'marked';
 import'./markdownpreviewer-style.css';
+import MarkdownTitle from './MarkdownTitle';
+import MarkdownPreview from './MarkdownPreview';
 
     marked.setOptions({
         gfm: true,
@@ -33,16 +35,11 @@ import'./markdownpreviewer-style.css';
         
         return (
             <div>
-                <header>
-                    <h1>
-                    This is a header for a Markdown Previewer
-                    </h1>
-                </header>
+                <MarkdownTitle />
                 <div>
                     <textarea id="editor" onChange={this.handleChange} value={this.state.input}>
                     </textarea>
-                    <div id="preview">
-                    </div>
+                    <MarkdownPreview />
                 </div>
             </div>
         );
