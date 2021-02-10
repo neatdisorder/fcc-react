@@ -1,5 +1,5 @@
 import React from 'react';
-import Quote from './Quote';
+import QuoteContainer from './QuoteContainer';
 import QuoteTitle from './QuoteTitle';
 import './quote-style.css';
 
@@ -17,8 +17,8 @@ class RandomQuoteMachine extends React.Component {
 
         let numberQuote = Math.floor(Math.random() * 5);
 
-        if (numberQuote == this.state.quote) {
-            if (numberQuote == 4) {
+        if (numberQuote === this.state.quote) {
+            if (numberQuote === 4) {
                 this.setState({
                     quote: numberQuote - 1
                 });
@@ -38,10 +38,7 @@ class RandomQuoteMachine extends React.Component {
       return (
           <div id='quote-app'>
             <QuoteTitle />
-            <div id="quote-container">
-              <Quote quote={this.state.quote}/>
-              <button onClick={this.changeQuote} id="new-quote">Show me another quote</button>
-            </div>
+            <QuoteContainer quote={this.state.quote} changeQuote={this.changeQuote} />
           </div>
       );
     };

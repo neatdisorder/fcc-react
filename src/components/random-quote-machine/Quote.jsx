@@ -1,4 +1,5 @@
 import React from 'react';
+import TweetButton from './TweetButton';
 
 class Quote extends React.Component {
   
@@ -17,9 +18,7 @@ class Quote extends React.Component {
                 <p id="quote-text">
                     {quotes[this.props.quote]}
                 </p>
-                <a href={tweetLink} id="tweet-quote" target="">
-                    Tweet this quote
-                </a>
+                <TweetButton tweetLink={tweetLink} />
             </section>
         );
     };

@@ -3,6 +3,7 @@ import marked from 'marked';
 import'./markdownpreviewer-style.css';
 import MarkdownTitle from './MarkdownTitle';
 import MarkdownPreview from './MarkdownPreview';
+import MarkdownTextArea from './MarkdownTextArea';
 
     marked.setOptions({
         gfm: true,
@@ -37,8 +38,7 @@ import MarkdownPreview from './MarkdownPreview';
             <div>
                 <MarkdownTitle />
                 <div>
-                    <textarea id="editor" onChange={this.handleChange} value={this.state.input}>
-                    </textarea>
+                    <MarkdownTextArea handleChange={this.handleChange} value={this.state.input} />
                     <MarkdownPreview />
                 </div>
             </div>
