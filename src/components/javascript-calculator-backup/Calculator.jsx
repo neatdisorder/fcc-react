@@ -1,6 +1,4 @@
 import React from 'react';
-import CalculatorDisplay from './CalculatorDisplay';
-import KeyboardButton from './KeyboardButton';
 
 class Calculator extends React.Component {
   
@@ -161,27 +159,102 @@ class Calculator extends React.Component {
     render() {
       return (
         <main id="calculator">
-          <CalculatorDisplay display={this.state.display} />
-          <div id="keyboard-numbers">
-            <KeyboardButton kbdbuttonid='zero' kbdvalue='0' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='one' kbdvalue='1' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='two' kbdvalue='2' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='three' kbdvalue='3' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='four' kbdvalue='4' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='five' kbdvalue='5' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='six' kbdvalue='6' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='seven' kbdvalue='7' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='eight' kbdvalue='8' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='nine' kbdvalue='9' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='decimal' kbdvalue='.' mouseClick={this.mouseClick} />
+          <div>
+            <div id="display">
+              {this.state.display}
+            </div>
+            <div>
+              Prov value: {this.state.provValue}
+            </div>
           </div>
-          <div id="keyboard-operators">
-            <KeyboardButton kbdbuttonid='add' kbdvalue='+' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='subtract' kbdvalue='-' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='multiply' kbdvalue='*' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='divide' kbdvalue='/' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='equals' kbdvalue='=' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='clear' kbdvalue='C' mouseClick={this.clearState} />
+          <div id="keyboard-numbers">
+            <div className="key" id="zero" onClick={this.mouseClick}>
+              <p>
+                0
+              </p>
+            </div>
+            <div className="key" id="one" onClick={this.mouseClick}>
+              <p>
+                1
+              </p>
+            </div>
+            <div className="key" id="two" onClick={this.mouseClick}>
+              <p>
+                2
+              </p>
+            </div>
+            <div className="key" id="three" onClick={this.mouseClick}>
+              <p>
+                3
+              </p>
+            </div>
+            <div className="key" id="four" onClick={this.mouseClick}>
+              <p>
+                4
+              </p>
+            </div>
+            <div className="key" id="five" onClick={this.mouseClick}>
+              <p>
+                5
+              </p>
+            </div>
+            <div className="key" id="six" onClick={this.mouseClick}>
+              <p>
+                6
+              </p>
+            </div>
+            <div className="key" id="seven" onClick={this.mouseClick}>
+              <p>
+                7
+              </p>
+            </div>
+            <div className="key" id="eight" onClick={this.mouseClick}>
+              <p>
+                8
+              </p>
+            </div>
+            <div className="key" id="nine" onClick={this.mouseClick}>
+              <p>
+                9
+              </p>
+            </div>
+            <div className="key" id="decimal" onClick={this.mouseClick}>
+              <p>
+                .
+              </p>
+            </div>
+           </div>
+            <div id="keyboard-operators">
+              <div className="key" id="add" onClick={this.mouseClick}>
+                <p>
+                  +
+                </p>
+              </div>
+              <div className="key" id="subtract" onClick={this.mouseClick}>
+                <p>
+                  -
+                </p>
+              </div>
+              <div className="key" id="multiply" onClick={this.mouseClick}>
+                <p>
+                  *
+                </p>
+              </div>
+              <div className="key" id="divide" onClick={this.mouseClick}>
+                <p>
+                  /
+                </p>
+              </div>
+              <div className="key" id="equals" onClick={this.mouseClick}>
+                <p>
+                  =
+                </p>
+              </div>
+              <div className="key" id="clear" onClick={this.clearState}>
+                <p>
+                  C
+                </p>
+              </div>
             </div>
         </main>
       )
