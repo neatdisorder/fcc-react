@@ -1,4 +1,7 @@
 import React from 'react';
+import Buttons from './Buttons';
+import Display from './Display';
+import StartStopReset from './StartStopReset';
 
 let timerID;
 
@@ -77,11 +80,11 @@ class Clock extends React.Component {
     
     if (this.state.sessionLength < 59) {
       
- this.state.timerObject.setMinutes(this.state.sessionLength + 1);
-      this.setState({
-        sessionLength: this.state.sessionLength + 1,
-        timeOnDisplay: (this.state.timerObject.getMinutes() > 9 ? (this.state.timerObject.getMinutes() == 0 ? "60" : this.state.timerObject.getMinutes()) : "0" + this.state.timerObject.getMinutes()) + ":" + (this.state.timerObject.getSeconds() > 9 ? this.state.timerObject.getSeconds() : "0" + this.state.timerObject.getSeconds())
-      });
+      this.state.timerObject.setMinutes(this.state.sessionLength + 1);
+            this.setState({
+              sessionLength: this.state.sessionLength + 1,
+              timeOnDisplay: (this.state.timerObject.getMinutes() > 9 ? (this.state.timerObject.getMinutes() == 0 ? "60" : this.state.timerObject.getMinutes()) : "0" + this.state.timerObject.getMinutes()) + ":" + (this.state.timerObject.getSeconds() > 9 ? this.state.timerObject.getSeconds() : "0" + this.state.timerObject.getSeconds())
+            });
       
     } else if (this.state.sessionLength == 59) {
       
@@ -158,52 +161,9 @@ class Clock extends React.Component {
   render() {
     return (
       <div id="clock-app">
-        <div id="buttons">
-          <div>
-            <button id="break-increment" onClick={this.breakIncrement}>
-              +
-            </button>
-            <p id="break-label">
-              Break length
-            </p>
-            <p id="break-length">
-              {this.state.breakLength}
-            </p>
-            <button id="break-decrement" onClick={this.breakDecrement}>
-              -
-            </button>
-          </div>
-          <div>
-            <button id="session-increment" onClick={this.sessionIncrement}>
-              +
-            </button>
-            <p id="session-label">
-              Session length
-            </p>
-            <p id="session-length">
-              {this.state.sessionLength}
-            </p>
-            <button id="session-decrement" onClick={this.sessionDecrement}>
-              -
-            </button>
-          </div>
-        </div>
-        <div>
-          <h3 id="timer-label">
-            {this.state.currentPeriod}
-          </h3>
-          <h2 id="time-left">
-            {this.state.timeOnDisplay}
-          </h2>
-        </div>
-        <div id="buttons-startstop">
-          <button id="start_stop" onClick={this.startStopTimer}>
-            START/STOP
-          </button>
-          <button id="reset" onClick={this.handleReset}>
-            RESET
-          </button>
-        </div>
+        <Buttons breakIncrement={this.breakIncrement} breakLength={this.state.breakLength} breakDecrement={this.breakDecrement} sessionIncrement={this.sessionIncrement} sessionLength={this.state.sessionLength} sessionDecrement={this.sessionDecrement} />
+        <Display currentPeriod={this.state.currentPeriod} timeOnDisplay={this.state.timeOnDisplay} />
+        <StartStopReset startStopTimer={this.startStopTimer} handleReset={this.handleReset} />
       </div>
     );  
   };
