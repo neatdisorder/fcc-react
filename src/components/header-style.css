@@ -1,0 +1,30 @@
+/* -- MOBILE -- */
+
+#header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #20232a;
+    width: 100vw;
+}
+
+header {
+    width: 80%;
+}
+
+/* -- DESKTOP -- */
+
+@media only screen and (min-width: 600px) {
+
+    #header-container {
+        width: 100vw;
+    }
+
+    header {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}

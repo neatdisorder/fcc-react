@@ -18,8 +18,9 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
-          <Header />
+          <div id="header-container">
+            <Header />
+          </div>
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/random-quote-machine'component={RandomQuoteMachine} />
@@ -29,7 +30,6 @@ class App extends React.Component {
             <Route path='/clock' component={ClockApp} />
           </Switch>
           <Footer />
-        </div>
       </BrowserRouter>
     );
   };

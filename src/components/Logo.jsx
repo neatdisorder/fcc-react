@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './logo-style.css';
 
 class Logo extends React.Component {
     constructor(props) {

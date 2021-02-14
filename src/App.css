@@ -1,46 +1,31 @@
+/* -- MOBILE -- */
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100vw;
+    font-family: 'Open Sans';
 }
 
-#root {
-    width: 80%;
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), url(./fonts/OpenSans-Regular.ttf) format('truetype');
 }
 
-header {
-    display: flex;
-    align-items: center;
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    src: local('Open Sans'), url(./fonts/OpenSans-SemiBold.ttf) format('truetype');
 }
 
-header ul {
-    display: flex;
-    list-style: none;
-}
+/* -- DESKTOP -- */
 
-header ul li {
-    margin: 10px;
-}
+@media only screen and (min-width: 600px) {
+    
+    main {
+        text-align: left;
+    }
 
-header a {
-    color: black;
-    text-decoration: none;
-}
-
-header ul a:hover {
-    color: black;
-    text-decoration: underline;
-}
-
-header ul .nav-active {
-    text-decoration: line-through;
-}
-
-header ul .nav-active:hover {
-    text-decoration: line-through;
-}
-
-main {
-    text-align: left;
 }
