@@ -8,7 +8,7 @@ class QuoteTitle extends React.Component {
     render() {
         return (
             <h2>
-                Random Quote Generator
+                Random Quote Machine
             </h2>
         )
     }

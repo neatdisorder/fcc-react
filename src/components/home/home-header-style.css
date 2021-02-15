@@ -1,5 +1,5 @@
 #home-header {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +49,7 @@
     #home-header img {
         position: absolute;
         top: 5em;
-        right: 0;
+        right: 1em;
         z-index: 1;
         width: 50%;
     }
