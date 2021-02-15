@@ -16,6 +16,12 @@ body {
 
 @font-face {
     font-family: 'Open Sans';
+    font-weight: 300;
+    src: local('Open Sans'), url(./fonts/OpenSans-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
     font-weight: 600;
     src: local('Open Sans'), url(./fonts/OpenSans-SemiBold.ttf) format('truetype');
 }
