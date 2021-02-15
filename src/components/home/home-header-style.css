@@ -5,19 +5,26 @@
     align-items: center;
     justify-content: center;
     background: #282c34;
-    height: 17em;
+    height: 25em;
+    position: relative;
+    overflow: hidden;
+}
+
+#home-header img {
+    position: absolute;
+    top: 11em;
+    z-index: 1;
+    width: 100%;
 }
 
 #home-header-container {
     width: 80%;
+    color: #ffffff;
+    z-index: 3;
 }
 
 #home-header-container h1 {
     color: #61dafb;
-}
-
-#home-header-container {
-    color: #ffffff;
 }
 
 #home-header-container a {
@@ -25,8 +32,26 @@
     text-decoration: none;
 }
 
-/* -- DESKTOP --
-
 @media only screen and (min-width: 600px) {
-    
-} */
+
+    #home-header img {
+        position: absolute;
+        top: 10em;
+        right: 0;
+        z-index: 1;
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #home-header img {
+        position: absolute;
+        top: 5em;
+        right: 0;
+        z-index: 1;
+        width: 50%;
+    }
+
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './home-header-style.css';
+import background from '../../assets/React.svg';
 
 class Home extends React.Component {
     constructor(props) {
@@ -17,6 +18,7 @@ class Home extends React.Component {
                         This is a portfolio containing my <a href="https://www.freecodecamp.org/learn/front-end-libraries/#front-end-libraries-projects" target="_blank">freeCodeCamp Front End Libraries</a> projects, created using <a href="https://es.reactjs.org/" target="_blank">React</a>.
                     </p>
                 </div>
+                <img src={background} alt="React logo" />
             </div>
         );
     };
