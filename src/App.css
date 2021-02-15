@@ -9,6 +9,10 @@ body {
     font-family: 'Open Sans';
 }
 
+#root {
+    width: 100%;
+}
+
 @font-face {
     font-family: 'Open Sans';
     src: local('Open Sans'), url(./fonts/OpenSans-Regular.ttf) format('truetype');
