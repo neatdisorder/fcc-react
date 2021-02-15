@@ -1,4 +1,6 @@
 import React from 'react';
+import HomeHeader from './HomeHeader';
+import HomeProjects from './HomeProjects';
 
 class Home extends React.Component {
     constructor(props) {
@@ -7,14 +9,10 @@ class Home extends React.Component {
 
     render() {
         return (
-            <main>
-                <h1>
-                    freeCodeCamp React Projects
-                </h1>
-                <p>
-                    This is a portfolio containing my freeCodeCamp Front End Libraries Projects.
-                </p>
-            </main>
+            <div>
+                <HomeHeader />
+                <HomeProjects />
+            </div>
         );
     };
 };

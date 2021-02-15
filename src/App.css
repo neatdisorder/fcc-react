@@ -20,12 +20,8 @@ body {
     src: local('Open Sans'), url(./fonts/OpenSans-SemiBold.ttf) format('truetype');
 }
 
-/* -- DESKTOP -- */
+/* -- DESKTOP --
 
 @media only screen and (min-width: 600px) {
     
-    main {
-        text-align: left;
-    }
-
-}
+} */
