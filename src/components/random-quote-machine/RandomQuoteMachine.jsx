@@ -1,7 +1,7 @@
 import React from 'react';
 import QuoteContainer from './QuoteContainer';
-import QuoteTitle from './QuoteTitle';
-import './quote-style.css';
+import RandomQuoteMachineHeader from './RandomQuoteMachineHeader';
+import './random-quote-machine-style.css';
 
 class RandomQuoteMachine extends React.Component {
   
@@ -35,10 +35,15 @@ class RandomQuoteMachine extends React.Component {
     }
     
     render() {
+
+      const quotes = ["\"I can't understand why people are frigthened of new ideas. I'm frightened of the old ones.\"", "\"There is no such thing as an empty space or an empty time. There is always something to see, something to hear. In fact, try as we may to make a silence, we cannot.\"", "\"There is poetry as soon as we realize that we possess nothing\"", "\"If something is boring after two minutes, try it for four. If still boring, then eight. Then sixteen. Then thirty-two. Eventually one discovers that it is not boring at all.\"", "\"We need not to destroy the past. It is gone\""];
+
+      const images = ['../../assets/john-cage-1.jpg', '../../assets/john-cage-2.jpg', '../../assets/john-cage-3.jpg', '../../assets/john-cage-4.jpg', '../../assets/john-cage-5.png'];
+
       return (
           <div id='quote-app'>
-            <QuoteTitle />
-            <QuoteContainer quote={this.state.quote} changeQuote={this.changeQuote} />
+            <RandomQuoteMachineHeader />
+            <QuoteContainer quote={quotes[this.state.quote]} changeQuote={this.changeQuote} imageIndex={this.state.quote} />
           </div>
       );
     };

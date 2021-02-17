@@ -1,5 +1,10 @@
 import React from 'react';
-import TweetButton from './TweetButton';
+import './quote-style.css';
+import image1 from '../../assets/random-quote-machine-assets/john-cage-1.jpg';
+import image2 from '../../assets/random-quote-machine-assets/john-cage-2.jpg';
+import image3 from '../../assets/random-quote-machine-assets/john-cage-3.jpg';
+import image4 from '../../assets/random-quote-machine-assets/john-cage-4.jpg';
+import image5 from '../../assets/random-quote-machine-assets/john-cage-5.png';
 
 class Quote extends React.Component {
   
@@ -8,17 +13,15 @@ class Quote extends React.Component {
     };
     
     render() {
-      
-        const quotes = ["\"I can't understand why people are frigthened of new ideas. I'm frightened of the old ones.\"", "\"There is no such thing as an empty space or an empty time. There is always something to see, something to hear. In fact, try as we may to make a silence, we cannot.\"", "\"There is poetry as soon as we realize that we possess nothing\"", "\"If something is boring after two minutes, try it for four. If still boring, then eight. Then sixteen. Then thirty-two. Eventually one discovers that it is not boring at all.\"", "\"We need not to destroy the past. It is gone\""];
-      
-        const tweetLink = `https://twitter.com/intent/tweet?=${quotes[this.props.quote]} (John Cage)`;
-      
+    
+        const images = [image1, image2, image3, image4, image5];
+
         return (
             <section>
+                <img src={images[this.props.imageIndex]} />
                 <p id="quote-text">
-                    {quotes[this.props.quote]}
+                    {this.props.quote}
                 </p>
-                <TweetButton tweetLink={tweetLink} />
             </section>
         );
     };
