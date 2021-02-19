@@ -1,0 +1,23 @@
+#new-quote {
+    margin: 0.5em;
+    margin-top: 1em;
+    background-color: #61dafb;
+    color: #000000;
+    border: none;
+    padding: 0.8em;
+    font-size: 20px;
+    font-family: 'Open Sans';
+}
+
+#new-quote:hover {
+    background-color: #FFFFFF;
+}
+
+@media only screen and (min-width: 600px) {
+    
+    #new-quote {
+        margin: 0;
+        margin-right: 0.5em;
+    }
+
+}

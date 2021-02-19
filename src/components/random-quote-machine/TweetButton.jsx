@@ -1,4 +1,5 @@
 import React from 'react';
+import './tweet-button-style.css';
 
 class TweetButton extends React.Component {
     constructor(props) {
@@ -7,8 +8,8 @@ class TweetButton extends React.Component {
 
     render() {
         return (
-            <a href={this.props.tweetLink} id="tweet-quote" target="">
-                    Tweet this quote
+            <a href={this.props.tweetLink} id="tweet-quote">
+                Tweet this quote
             </a>
         );
     };

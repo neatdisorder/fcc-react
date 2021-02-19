@@ -18,10 +18,14 @@ class Quote extends React.Component {
 
         return (
             <section>
-                <img src={images[this.props.imageIndex]} />
-                <p id="quote-text">
-                    {this.props.quote}
-                </p>
+                <div id="img-container">
+                    <img src={images[this.props.imageIndex]} />
+                </div>
+                <div id="quote-text-container">
+                    <h2 id="quote-text">
+                        {this.props.quote}
+                    </h2>
+                </div>
             </section>
         );
     };

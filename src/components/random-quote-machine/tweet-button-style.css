@@ -1,0 +1,20 @@
+#tweet-quote {
+    margin: 0.5em;
+    margin-bottom: 1em;
+    font-size: 20px;
+    text-decoration: none;
+    color: #61dafb;
+}
+
+@media only screen and (min-width: 600px) {
+
+    #tweet-quote {
+        margin: 0;
+        margin-left: 0.5em;
+    }
+
+    #tweet-quote:hover {
+        color: #ffffff;
+    }
+
+}
