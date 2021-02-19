@@ -1,4 +1,5 @@
 import React from 'react';
+import './markdownpreview-style.css';
 
 class MarkdownPreview extends React.Component {
     constructor(props) {
@@ -7,7 +8,12 @@ class MarkdownPreview extends React.Component {
 
     render() {
         return (
-            <div id="preview">
+            <div id="preview-area">
+                <h2>
+                    Preview your markdown here:
+                </h2>
+                <div id="preview">
+                </div>
             </div>
         )
     }

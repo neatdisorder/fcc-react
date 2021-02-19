@@ -1,8 +1,8 @@
 import React from 'react';
-import './random-quote-machine-header-style.css';
+import './markdown-previewer-header-style.css';
 import background from '../../assets/React.svg';
 
-class RandomQuoteMachineHeader extends React.Component {
+class MarkdownPreviewerHeader extends React.Component {
     constructor(props) {
         super(props);
     };
@@ -12,10 +12,10 @@ class RandomQuoteMachineHeader extends React.Component {
             <div id="home-header">
                 <div id="home-header-container">
                     <h1>
-                        Random Quote Machine
+                        Markdown Previewer
                     </h1>
                     <p>
-                        A Random Quote Machine shuffling between different quotes by the <a href="https://en.wikipedia.org/wiki/John_Cage" target="_blank">North American composer John Cage</a>.
+                        A Markdown Previewer built using <a href="https://marked.js.org/" target="_blank">Marked</a> that renders content using the styling syntax featured on <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">GitHub</a> . 
                     </p>
                 </div>
                 <img src={background} alt="React logo" />
@@ -23,5 +23,4 @@ class RandomQuoteMachineHeader extends React.Component {
         );
     };
 };
-
-export default RandomQuoteMachineHeader;
+export default MarkdownPreviewerHeader;

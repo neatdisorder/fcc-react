@@ -1,4 +1,5 @@
 import React from 'react';
+import './markdowntextarea-style.css';
 
 class MarkdownTextArea extends React.Component {
     constructor(props) {
@@ -7,8 +8,13 @@ class MarkdownTextArea extends React.Component {
 
     render() {
         return (
-            <textarea id="editor" onChange={this.props.handleChange} value={this.props.value}>
-            </textarea>
+            <div id="text-area">
+                <h2>
+                    Input your markdown here:
+                </h2>
+                <textarea id="editor" onChange={this.props.handleChange} value={this.props.value}>
+                </textarea>
+            </div>
         );
     };
 };
