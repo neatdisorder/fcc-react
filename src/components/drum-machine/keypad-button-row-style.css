@@ -1,0 +1,13 @@
+.button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-row:first-child {
+    margin-bottom: 1em;
+}
+
+.button-row:last-child {
+    margin-top: 1em;
+}

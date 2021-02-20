@@ -1,0 +1,27 @@
+.drum-pad {
+    background-color: #61dafb;
+    color: #000000;
+    border: none;
+    width: 5em;
+    height: 5em;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drum-pad:hover {
+    background-color: #FFFFFF;
+}
+
+.drum-pad p {
+    margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .drum-pad {
+        width: 4em;
+        height: 4em;
+    }
+}

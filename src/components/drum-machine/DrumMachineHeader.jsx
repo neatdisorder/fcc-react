@@ -1,8 +1,8 @@
 import React from 'react';
-import './markdown-previewer-header-style.css';
+import './drum-machine-header-style.css';
 import background from '../../assets/React.svg';
 
-class MarkdownPreviewerHeader extends React.Component {
+class DrumMachineHeader extends React.Component {
     constructor(props) {
         super(props);
     };
@@ -12,10 +12,10 @@ class MarkdownPreviewerHeader extends React.Component {
             <div id="home-header">
                 <div id="home-header-container">
                     <h1>
-                        Markdown Previewer
+                        Drum Machine
                     </h1>
                     <p>
-                        A Markdown Previewer built using <a href="https://marked.js.org/" target="_blank">Marked</a> that renders content using the styling syntax featured on <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">GitHub</a>. 
+                        A Drum Machine that plays audio samples using both mouse and keyboard. 
                     </p>
                 </div>
                 <img src={background} alt="React logo" />
@@ -23,4 +23,4 @@ class MarkdownPreviewerHeader extends React.Component {
         );
     };
 };
-export default MarkdownPreviewerHeader;
+export default DrumMachineHeader;

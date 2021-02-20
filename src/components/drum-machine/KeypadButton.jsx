@@ -1,4 +1,5 @@
 import React from 'react';
+import './keypad-button-style.css';
 
 class KeypadButton extends React.Component {
     constructor(props) {

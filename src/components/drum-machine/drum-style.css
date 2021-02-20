@@ -1,0 +1,21 @@
+#drum-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    width: 100%;
+}
+  
+#drum-machine {
+    background-color: #282c34;
+    width: 80%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+@media only screen and (min-width: 600px) {
+    #drum-machine {
+        width: 21em;
+    }
+}

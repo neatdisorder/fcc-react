@@ -1,4 +1,5 @@
 import React from 'react';
+import './drum-display-style.css';
 
 class DrumDisplay extends React.Component {
     constructor(props) {

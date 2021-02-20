@@ -1,6 +1,7 @@
 import React from 'react';
 import DrumDisplay from './DrumDisplay';
 import DrumKeypad from './DrumKeypad';
+import './drum-style.css';
 
 class Drum extends React.Component {
     constructor(props) {
@@ -49,9 +50,11 @@ class Drum extends React.Component {
     
     render() {
       return (
-        <div id="drum-machine" onKeyPress={this.keyboardClick} tabIndex="0">
-          <DrumKeypad mouseClick={this.mouseClick} />
-          <DrumDisplay lastSample={this.state.lastSample} />
+        <div id="drum-container" onKeyPress={this.keyboardClick} tabIndex="0">
+          <div id="drum-machine">
+            <DrumKeypad mouseClick={this.mouseClick} />
+            <DrumDisplay lastSample={this.state.lastSample} />
+          </div>
         </div>
       )
     };
