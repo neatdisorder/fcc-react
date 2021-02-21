@@ -1,6 +1,6 @@
 import React from 'react';
 import Calculator from './Calculator';
-import CalculatorTitle from './CalculatorTitle';
+import CalculatorHeader from './CalculatorHeader';
 import './javascriptcalculator-style.css';
 
 class JavascriptCalculator extends React.Component {
@@ -11,8 +11,8 @@ class JavascriptCalculator extends React.Component {
     
     render() {
       return (
-        <div>
-          <CalculatorTitle />
+        <div id="calculator-container">
+          <CalculatorHeader />
           <Calculator />
         </div>
       );

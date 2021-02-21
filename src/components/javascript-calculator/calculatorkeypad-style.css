@@ -1,0 +1,29 @@
+#calculator-keypad {
+    display: flex;
+    margin-top: 2em;
+}
+
+.keypad-column:first-child {
+    margin-right: 1em;
+}
+
+.keypad-column:last-child {
+    margin-left: 1em;
+}
+
+.keypad-row {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.keypad-row:last-child {
+    margin-bottom: 0;
+}
+
+#column-numbers .key:first-child {
+    margin-right: 1em;
+}
+
+#column-numbers .key:last-child {
+    margin-left: 1em;
+}

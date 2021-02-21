@@ -1,6 +1,7 @@
 import React from 'react';
 import CalculatorDisplay from './CalculatorDisplay';
-import KeyboardButton from './KeyboardButton';
+import CalculatorKeypad from './CalculatorKeypad';
+import './calculator-style.css';
 
 class Calculator extends React.Component {
   
@@ -160,30 +161,10 @@ class Calculator extends React.Component {
     
     render() {
       return (
-        <main id="calculator">
+        <div id="calculator">
           <CalculatorDisplay display={this.state.display} />
-          <div id="keyboard-numbers">
-            <KeyboardButton kbdbuttonid='zero' kbdvalue='0' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='one' kbdvalue='1' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='two' kbdvalue='2' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='three' kbdvalue='3' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='four' kbdvalue='4' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='five' kbdvalue='5' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='six' kbdvalue='6' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='seven' kbdvalue='7' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='eight' kbdvalue='8' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='nine' kbdvalue='9' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='decimal' kbdvalue='.' mouseClick={this.mouseClick} />
-          </div>
-          <div id="keyboard-operators">
-            <KeyboardButton kbdbuttonid='add' kbdvalue='+' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='subtract' kbdvalue='-' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='multiply' kbdvalue='*' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='divide' kbdvalue='/' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='equals' kbdvalue='=' mouseClick={this.mouseClick} />
-            <KeyboardButton kbdbuttonid='clear' kbdvalue='C' mouseClick={this.clearState} />
-            </div>
-        </main>
+          <CalculatorKeypad mouseClick={this.mouseClick} clearState={this.clearState} />
+        </div>
       )
     };
   };

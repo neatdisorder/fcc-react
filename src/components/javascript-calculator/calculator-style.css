@@ -1,0 +1,14 @@
+#calculator {
+    background-color: #282c34;
+    padding: 2em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+#keyboard-numbers, #keyboard-operators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
