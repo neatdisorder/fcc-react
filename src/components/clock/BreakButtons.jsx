@@ -1,4 +1,5 @@
 import React from 'react';
+import './breakbuttons-style.css';
 
 class BreakButtons extends React.Component {
     constructor(props) {
@@ -7,7 +8,7 @@ class BreakButtons extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id="break-buttons-container">
                 <button id="break-increment" onClick={this.props.breakIncrement}>
                     +
                 </button>

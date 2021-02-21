@@ -1,4 +1,5 @@
 import React from 'react';
+import './sessionbuttons-style.css';
 
 class SessionButtons extends React.Component {
     constructor(props) {
@@ -7,7 +8,7 @@ class SessionButtons extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id="session-buttons-container">
                 <button id="session-increment" onClick={this.props.sessionIncrement}>
                     +
                 </button>

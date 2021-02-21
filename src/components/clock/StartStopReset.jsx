@@ -1,4 +1,5 @@
 import React from 'react';
+import './startstopreset-style.css';
 
 class StartStopReset extends React.Component {
     constructor(props) {

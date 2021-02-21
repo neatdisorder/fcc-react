@@ -2,6 +2,7 @@ import React from 'react';
 import Buttons from './Buttons';
 import Display from './Display';
 import StartStopReset from './StartStopReset';
+import './clock-style.css';
 
 let timerID;
 
@@ -161,9 +162,11 @@ class Clock extends React.Component {
   render() {
     return (
       <div id="clock-app">
-        <Buttons breakIncrement={this.breakIncrement} breakLength={this.state.breakLength} breakDecrement={this.breakDecrement} sessionIncrement={this.sessionIncrement} sessionLength={this.state.sessionLength} sessionDecrement={this.sessionDecrement} />
-        <Display currentPeriod={this.state.currentPeriod} timeOnDisplay={this.state.timeOnDisplay} />
-        <StartStopReset startStopTimer={this.startStopTimer} handleReset={this.handleReset} />
+        <div id="clock-container">
+          <Buttons breakIncrement={this.breakIncrement} breakLength={this.state.breakLength} breakDecrement={this.breakDecrement} sessionIncrement={this.sessionIncrement} sessionLength={this.state.sessionLength} sessionDecrement={this.sessionDecrement} />
+          <Display currentPeriod={this.state.currentPeriod} timeOnDisplay={this.state.timeOnDisplay} />
+          <StartStopReset startStopTimer={this.startStopTimer} handleReset={this.handleReset} />
+        </div>
       </div>
     );  
   };

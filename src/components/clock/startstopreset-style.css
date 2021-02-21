@@ -1,0 +1,25 @@
+#buttons-startstop {
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#buttons-startstop button {
+    background-color: #61dafb;
+    color: #000000;
+    border: none;
+    padding: 1em;
+}
+
+#buttons-startstop button:hover {
+    background-color: #ffffff;
+}
+
+
+#buttons-startstop button:first-child {
+    width: 10em;
+}
+
+#buttons-startstop button:last-child {
+    width: 10em;
+}

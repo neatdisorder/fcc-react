@@ -1,8 +1,8 @@
 import React from 'react';
-import './calculatorheader-style.css';
+import './clock-header-style.css';
 import background from '../../assets/React.svg';
 
-class CalculatorHeader extends React.Component {
+class MarkdownPreviewerHeader extends React.Component {
     constructor(props) {
         super(props);
     };
@@ -12,10 +12,10 @@ class CalculatorHeader extends React.Component {
             <div id="home-header">
                 <div id="home-header-container">
                     <h1>
-                        Javascript Calculator
+                        25 + 5 Clock
                     </h1>
                     <p>
-                        A basic calculator programmed in javascript using React.
+                        A 25 + 5 Clock which can be used to track time using the <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Pomodoro Technique</a>. 
                     </p>
                 </div>
                 <img src={background} alt="React logo" />
@@ -23,5 +23,4 @@ class CalculatorHeader extends React.Component {
         );
     };
 };
-
-export default CalculatorHeader;
+export default MarkdownPreviewerHeader;

@@ -1,7 +1,6 @@
 import React from 'react';
 import Clock from './Clock';
-import './clockapp-style.css';
-import ClockTitle from './ClockTitle';
+import ClockHeader from './ClockHeader';
 
 class ClockApp extends React.Component {
     constructor(props) {
@@ -14,7 +13,7 @@ class ClockApp extends React.Component {
           <audio id="beep">
             <source src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav" />
           </audio>
-          <ClockTitle />
+          <ClockHeader />
           <Clock />
         </div>
       );  

@@ -1,0 +1,16 @@
+/* #session-buttons-container {
+    margin-left: 1em;
+} */
+
+#session-buttons-container button {
+    background-color: #61dafb;
+    color: #000000;
+    border: none;
+    height: 3em;
+    width: 3em;
+}
+
+#session-buttons-container button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}

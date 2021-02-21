@@ -9,7 +9,7 @@ class DrumDisplay extends React.Component {
     render() {
         return (
             <div id="text-output">
-                <p id="display">
+                <p id="drum-display">
                     {this.props.lastSample}
                 </p>
             </div>

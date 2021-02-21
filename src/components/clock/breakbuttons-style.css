@@ -1,0 +1,16 @@
+/* #break-buttons-container {
+    margin-right: 1em;
+} */
+
+#break-buttons-container button {
+    background-color: #61dafb;
+    color: #000000;
+    border: none;
+    height: 3em;
+    width: 3em;
+}
+
+#break-buttons-container button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
