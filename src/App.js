@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/home/Home';
@@ -17,7 +17,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
           <div id="header-container">
             <Header />
           </div>
@@ -30,7 +30,7 @@ class App extends React.Component {
             <Route path='/clock' component={ClockApp} />
           </Switch>
           <Footer />
-      </BrowserRouter>
+      </HashRouter>
     );
   };
 };
