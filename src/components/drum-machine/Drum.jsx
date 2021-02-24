@@ -2,6 +2,7 @@ import React from 'react';
 import DrumDisplay from './DrumDisplay';
 import DrumKeypad from './DrumKeypad';
 import './drum-style.css';
+import DrumKeysReference from './DrumKeysReference';
 
 class Drum extends React.Component {
     constructor(props) {
@@ -45,7 +46,7 @@ class Drum extends React.Component {
     };
 
     componentDidMount() {
-      document.getElementById("drum-machine").focus();
+      document.getElementById("drum-container").focus();
     }
     
     render() {
@@ -55,6 +56,7 @@ class Drum extends React.Component {
             <DrumKeypad mouseClick={this.mouseClick} />
             <DrumDisplay lastSample={this.state.lastSample} />
           </div>
+          <DrumKeysReference />
         </div>
       )
     };

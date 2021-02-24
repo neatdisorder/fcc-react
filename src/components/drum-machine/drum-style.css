@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-top: 2em;
     margin-bottom: 3em;
     width: 100%;
@@ -15,6 +16,10 @@
 }
 
 @media only screen and (min-width: 600px) {
+    #drum-container {
+        flex-direction: row;
+    }
+
     #drum-machine {
         width: 21em;
     }

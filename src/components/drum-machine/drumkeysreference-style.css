@@ -1,0 +1,36 @@
+#drum-keys-reference {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#drum-keys-reference ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#drum-keys-reference ul li {
+    color: #6d6d6d;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-bottom: 0.83em;
+}
+
+#drum-keys-reference ul li:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 600px) {
+
+    #drum-keys-reference {
+        text-align: left;
+    }
+
+    #drum-keys-reference ul {
+        margin: 0;
+        padding-left: 40px;
+    }
+
+}
