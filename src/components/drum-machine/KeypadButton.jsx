@@ -1,5 +1,14 @@
 import React from 'react';
 import './keypad-button-style.css';
+import qSound from '../../assets/drum-machine-samples/clap.wav';
+import wSound from '../../assets/drum-machine-samples/snap.wav';
+import eSound from '../../assets/drum-machine-samples/clave.wav';
+import aSound from '../../assets/drum-machine-samples/crash.wav';
+import sSound from '../../assets/drum-machine-samples/openhh.wav';
+import dSound from '../../assets/drum-machine-samples/closedhh.wav';
+import zSound from '../../assets/drum-machine-samples/rimshot.wav';
+import xSound from '../../assets/drum-machine-samples/snare.wav';
+import cSound from '../../assets/drum-machine-samples/kick.wav';
 
 class KeypadButton extends React.Component {
     constructor(props) {
@@ -11,15 +20,15 @@ class KeypadButton extends React.Component {
         const drumPadId = this.props.keyShown.toLowerCase() + '-pad';
 
         const soundSamples = {
-            Q: "https://s3.amazonaws.com/freecodecamp/drums/punchy_kick_1.mp3",
-            W: "https://s3.amazonaws.com/freecodecamp/drums/side_stick_1.mp3",
-            E: "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3",
-            A: "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3",
-            S: "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3",
-            D: "https://s3.amazonaws.com/freecodecamp/drums/Dry_Ohh.mp3",
-            Z: "https://s3.amazonaws.com/freecodecamp/drums/Chord_3.mp3",
-            X: "https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3",
-            C: "https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3"
+            Q: qSound,
+            W: wSound,
+            E: eSound,
+            A: aSound,
+            S: sSound,
+            D: dSound,
+            Z: zSound,
+            X: xSound,
+            C: cSound,
         };
 
         return (

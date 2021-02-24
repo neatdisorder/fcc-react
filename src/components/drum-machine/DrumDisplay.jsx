@@ -7,10 +7,23 @@ class DrumDisplay extends React.Component {
     };
 
     render() {
+
+        const soundNames = {
+            'Q': 'Clap',
+            'W': 'Snap',
+            'E': 'Clave',
+            'A': 'Crash',
+            'S': 'Open hi-hat',
+            'D': 'Closed hi-hat',
+            'Z': 'Rimshot',
+            'X': 'Snare',
+            'C': 'Kick'
+        };
+
         return (
             <div id="text-output">
                 <p id="drum-display">
-                    {this.props.lastSample}
+                    {soundNames[this.props.lastSample] || this.props.lastSample}
                 </p>
             </div>
         );
