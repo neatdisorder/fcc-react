@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import AboutMeCard from './AboutMeCard';
 import './home-projects-style.css';
 
 class HomeProjects extends React.Component {
@@ -18,7 +19,7 @@ class HomeProjects extends React.Component {
                 <div className="cards-row">
                     <ProjectCard projectId={3} />
                     <ProjectCard projectId={4} />
-                    <ProjectCard projectId={5} />
+                    <AboutMeCard />
                 </div>
             </div>
         );
