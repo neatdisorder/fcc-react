@@ -1,6 +1,5 @@
 import React from 'react';
 import QuoteContainer from './QuoteContainer';
-import RandomQuoteMachineHeader from './RandomQuoteMachineHeader';
 import QuoteButtons from './QuoteButtons';
 import './random-quote-machine-style.css';
 
@@ -43,7 +42,6 @@ class RandomQuoteMachine extends React.Component {
 
       return (
           <div id='quote-app'>
-            <RandomQuoteMachineHeader />
             <QuoteContainer quote={quotes[this.state.quote]} imageIndex={this.state.quote} />
             <QuoteButtons quote={quotes[this.state.quote]} changeQuote={this.changeQuote} />
           </div>

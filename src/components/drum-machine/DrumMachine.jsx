@@ -1,6 +1,5 @@
 import React from 'react';
 import Drum from './Drum'
-import DrumMachineHeader from './DrumMachineHeader';
 
 class DrumMachine extends React.Component {
   
@@ -10,10 +9,7 @@ class DrumMachine extends React.Component {
   
   render() {
     return (
-      <div>
-        <DrumMachineHeader />
         <Drum />
-      </div>
     );
   };
     

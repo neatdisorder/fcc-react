@@ -1,7 +1,6 @@
 import React from 'react';
 import marked from 'marked';
 import'./markdownpreviewer-style.css';
-import MarkdownPreviewerHeader from './MarkdownPreviewerHeader';
 import MarkdownPreview from './MarkdownPreview';
 import MarkdownTextArea from './MarkdownTextArea';
 
@@ -36,7 +35,6 @@ import MarkdownTextArea from './MarkdownTextArea';
         
         return (
             <div id="markdown-previewer-container">
-                <MarkdownPreviewerHeader />
                 <div id="input-output">
                     <MarkdownTextArea handleChange={this.handleChange} value={this.state.input} />
                     <MarkdownPreview />

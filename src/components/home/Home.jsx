@@ -1,5 +1,4 @@
 import React from 'react';
-import HomeHeader from './HomeHeader';
 import HomeProjects from './HomeProjects';
 
 class Home extends React.Component {
@@ -9,10 +8,7 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div>
-                <HomeHeader />
                 <HomeProjects />
-            </div>
         );
     };
 };

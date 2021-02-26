@@ -8,6 +8,7 @@ import MarkdownPreviewer from './components/markdown-previewer/MarkdownPreviewer
 import DrumMachine from './components/drum-machine/DrumMachine';
 import JavascriptCalculator from './components/javascript-calculator/JavascriptCalculator';
 import ClockApp from './components/clock/ClockApp';
+import Masthead from './components/Masthead';
 import './App.css';
 
 class App extends React.Component {
@@ -22,12 +23,30 @@ class App extends React.Component {
             <Header />
           </div>
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/random-quote-machine'component={RandomQuoteMachine} />
-            <Route path='/markdown-previewer' component={MarkdownPreviewer} />
-            <Route path='/drum-machine' component={DrumMachine} />
-            <Route path='/javascript-calculator' component={JavascriptCalculator} />
-            <Route path='/clock' component={ClockApp} />
+            <Route exact path='/'>
+              <Masthead value={0} />
+              <Home />
+            </Route>
+            <Route exact path='/random-quote-machine'>
+              <Masthead value={1} />
+              <RandomQuoteMachine />
+            </Route>
+            <Route exact path='/markdown-previewer'>
+              <Masthead value={2} />
+              <MarkdownPreviewer />
+            </Route>
+            <Route exact path='/drum-machine'>
+              <Masthead value={3} />
+              <DrumMachine />
+            </Route>
+            <Route exact path='/javascript-calculator'>
+              <Masthead value={4} />
+              <JavascriptCalculator />
+            </Route>
+            <Route exact path='/clock'>
+              <Masthead value={5} />
+              <ClockApp />
+            </Route>
           </Switch>
           <Footer />
       </BrowserRouter>
