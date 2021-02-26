@@ -29,9 +29,3 @@ body {
     font-weight: 600;
     src: local('Open Sans'), url(./fonts/OpenSans-SemiBold.ttf) format('truetype');
 }
-
-/* -- DESKTOP --
-
-@media only screen and (min-width: 600px) {
-    
-} */
